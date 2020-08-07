@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
+import AllComponents from './components/AllComponents'
+import Don_Ng_Resume from './assets/Don_Ng_Resume.pdf'
 
-function App() {
+let sidebar = ['home', 'about', 'projects', 'contact']
+
+export default function App() {
+  const [selected, setSelected] = useState('welcome')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mainbody">
+      <div className="navBar">
+        <div className="navContents">
+          <ul onClick={() => setSelected('home')}>Home</ul>
+          <ul onClick={() => setSelected('about')}>About</ul>
+          <ul onClick={() => setSelected('projects')}>Projects</ul>
+          <ul onClick={() => setSelected('contact')}>Contact</ul>
+          <ul>
+            <a href={Don_Ng_Resume} download>Resume</a>
+          </ul>
+        </div>
+      </div>
+      <div className="allComps">
+        <AllComponents scrollTo={sidebar.indexOf(selected)}></AllComponents>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;
