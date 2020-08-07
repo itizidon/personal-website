@@ -11,7 +11,7 @@ const scrollToRef = ref => {
 export default function AllComponents(props) {
   useEffect(() => {
     console.log(props.scrollTo)
-    window.scrollTo(0, props.scrollTo)
+    window.scrollTo({ top: props.scrollTo, behavior: 'smooth' })
   }, [props.scrollTo])
   return (
     <div>
