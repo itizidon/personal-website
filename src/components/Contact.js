@@ -16,7 +16,7 @@ export default class MyForm extends React.Component {
         <h1 className="contact">Contact Me</h1>
         <form
           onSubmit={this.submitForm}
-          action="https://formspree.io/mwkrydkd"
+          action={process.env.REACT_APP_NOT_SECRET_CODE}
           method="POST"
         >
           <div className="formHeader">
@@ -48,7 +48,9 @@ export default class MyForm extends React.Component {
     ev.preventDefault()
     const form = ev.target
     const data = new FormData(form)
-    console.log(data)
+    // console.log(data)
+    // console.log(process.env)
+    console.log(process.env.REACT_APP_NOT_SECRET_CODE)
     const xhr = new XMLHttpRequest()
     xhr.open(form.method, form.action)
     xhr.setRequestHeader('Accept', 'application/json')
