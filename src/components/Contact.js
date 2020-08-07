@@ -12,7 +12,7 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state
     return (
-      <div>
+      <div className="contactPadding">
         <h1 className="contact">Contact Me</h1>
         <form
           onSubmit={this.submitForm}
@@ -31,7 +31,7 @@ export default class MyForm extends React.Component {
           </div>
           <div className="labels">
             <label>Message:</label>
-            <input
+            <textarea
               type="text"
               name="message"
               style={{ width: '1400px', height: '450px' }}

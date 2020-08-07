@@ -80,6 +80,8 @@ body {
 #HomePage {
   text-align: center;
   font-size: 50px;
+  padding-bottom: 300px;
+  padding-top: 200px;
 }
 
 #about {
@@ -126,6 +128,7 @@ body {
 .video {
   display: flex;
   justify-content: center;
+  padding-top: 200px;
 }
 
 .inVideo{
@@ -162,6 +165,40 @@ body {
 }
 
 .contact{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+#test {
+  text-align:center;
+}
+
+.description{
+  display: flex;
+  justify-content: center;
+}
+
+.projectsPadding{
+  padding-top: 200px;
+}
+
+.contactPadding{
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+}
+
+.description h5{
+  display: flex;
+  justify-content: center;
+}
+
+.descriptionNoTitle{
   display: flex;
   justify-content: center;
 }
