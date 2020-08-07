@@ -48,9 +48,6 @@ export default class MyForm extends React.Component {
     ev.preventDefault()
     const form = ev.target
     const data = new FormData(form)
-    // console.log(data)
-    // console.log(process.env)
-    console.log(process.env.REACT_APP_NOT_SECRET_CODE)
     const xhr = new XMLHttpRequest()
     xhr.open(form.method, form.action)
     xhr.setRequestHeader('Accept', 'application/json')
