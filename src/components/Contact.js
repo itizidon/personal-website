@@ -34,7 +34,7 @@ export default class MyForm extends React.Component {
             <textarea
               type="text"
               name="message"
-              style={{ width: '1400px', height: '450px' }}
+              style={{ width: '100%', height: '450px' }}
             />
           </div>
           {status === 'SUCCESS' ? <p>Thanks!</p> : <button>Submit</button>}

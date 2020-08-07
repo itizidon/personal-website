@@ -161,7 +161,7 @@ body {
 }
 
 #email{
-  padding-left: 775px;
+  padding-left: 950px;
 }
 
 .contact{
@@ -201,4 +201,9 @@ body {
 .descriptionNoTitle{
   display: flex;
   justify-content: center;
+}
+
+#stackadonId{
+  padding-left: 100px;
+  padding-right: 100px;
 }
