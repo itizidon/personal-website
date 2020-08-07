@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="comps" id="projects">
         <div className="contents">
           <p>
-            <img src={watchbuddy} height={'200px'} width={'407px'} />
+            <img src={watchbuddy} height={'200px'} width={'407px'} alt="watchbuddy" />
           </p>
           <div className="description">
             <h5>Watch Buddy</h5>
@@ -29,7 +29,7 @@ export default function Projects() {
         </div>
         <div className="contents">
           <p>
-            <img src={stackadon} height={'200px'} width={'408px'}></img>
+            <img src={stackadon} height={'200px'} width={'408px'} alt="stackadon"></img>
           </p>
           <div className="description">
             <h5>Stackadon</h5>
@@ -49,7 +49,7 @@ export default function Projects() {
         </div>
         <div className="contents">
           <p>
-            <img src={stockviewer} height={'200px'} width={'355px'}></img>
+            <img src={stockviewer} height={'200px'} width={'355px'} alt="stockviewer"></img>
           </p>
           <div className="description">
             <h5>Stock-Viewer</h5>
