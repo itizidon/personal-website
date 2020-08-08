@@ -16,7 +16,7 @@ export default function App() {
           <ul onClick={() => setSelected('about')}>About</ul>
           <ul onClick={() => setSelected('projects')}>Projects</ul>
           <ul onClick={() => setSelected('contact')}>Contact</ul>
-          <ul>
+          <ul id="viewResume">
             <a classname="viewResume" href={Don_Ng_Resume}>Resume</a>
           </ul>
         </div>
