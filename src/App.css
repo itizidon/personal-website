@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-body {
-  padding-top: 90px;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -42,11 +38,13 @@ body {
 }
 
 .comps {
+  width: 100vw;
   height: 500px;
 }
 
 .navBar {
   overflow: hidden;
+  height: 75px;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -86,10 +84,11 @@ body {
 
 #about {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 
-#about p{
+#about p {
   display: flex;
   justify-content: center;
 }
@@ -111,17 +110,18 @@ body {
   justify-content: center;
 }
 
-.contents p{
+.contents p {
   display: flex;
   justify-content: center;
 }
 
 #projects {
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 
-.contents h6{
+.contents h6 {
   font-size: 15px;
 }
 
@@ -131,79 +131,106 @@ body {
   padding-top: 200px;
 }
 
-.inVideo{
+.inVideo {
   display: flex;
   flex-direction: column;
 }
 
-.inVideo a{
+.inVideo a {
   display: flex;
   justify-content: center;
 }
 
-.inVideo p{
+.inVideo p {
   display: flex;
   justify-content: center;
 }
 
-.inVideo h6{
+.inVideo h6 {
   font-size: 15px;
 }
-
-.labels{
-  display: flex;
-  flex-direction: column;
-}
-
+/*
 .formHeader {
   display: flex;
-  flex-direction: row;
-}
-
-#email{
-  padding-left: 950px;
-}
-
-.contact{
-  display: flex;
   justify-content: center;
-  padding-bottom: 100px;
-}
+  flex-direction: row;
+} */
 
 #test {
-  text-align:center;
+  text-align: center;
 }
 
-.description{
+.description {
   display: flex;
   justify-content: center;
 }
 
-.projectsPadding{
+.projectsPadding {
   padding-top: 200px;
 }
 
-.contactPadding{
-  padding-top: 200px;
-  padding-bottom: 150px;
-}
-
-.description{
+.description {
   display: flex;
   flex-direction: column;
 }
 
-.description h5{
+.description h5 {
   display: flex;
   justify-content: center;
 }
 
-.descriptionNoTitle{
+.descriptionNoTitle {
   display: flex;
   justify-content: center;
 }
 
-#stackadonId{
+#stackadonId {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.formbody {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.formbody h4{
+  display: flex;
+  justify-content: center;
+}
+
+
+.form {
+  /* display: flex;
+  justify-content: center; */
+  width: 1000px;
+}
+
+.formwrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+}
+
+#msgBox {
+  height: 300px;
+}
+
+.linkedIn{
+  padding-right: 30px;
+}
+
+.resume{
+  padding-left: 30px;
+}
+
+.viewResume{
+  color: white;
 }

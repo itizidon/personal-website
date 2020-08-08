@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import './App.css'
 import AllComponents from './components/AllComponents'
 import Don_Ng_Resume from './assets/Don_Ng_Resume.pdf'
-
 let sidebar = ['home', 'about', 'projects', 'contact']
 
-let ycoord = [0, 720, 1700, 3300]
+let ycoord = [0, 720, 1500, 3300]
 
 export default function App() {
   const [selected, setSelected] = useState('welcome')
@@ -18,12 +17,14 @@ export default function App() {
           <ul onClick={() => setSelected('projects')}>Projects</ul>
           <ul onClick={() => setSelected('contact')}>Contact</ul>
           <ul>
-            <a href={Don_Ng_Resume} download>Resume</a>
+            <a classname="viewResume" href={Don_Ng_Resume}>Resume</a>
           </ul>
         </div>
       </div>
       <div className="allComps">
-        <AllComponents scrollTo={ycoord[sidebar.indexOf(selected)]}></AllComponents>
+        <AllComponents
+          scrollTo={ycoord[sidebar.indexOf(selected)]}
+        ></AllComponents>
       </div>
     </div>
   )

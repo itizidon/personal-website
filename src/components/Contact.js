@@ -12,34 +12,41 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state
     return (
-      <div className="contactPadding">
-        <h1 className="contact">Contact Me</h1>
-        <form
-          onSubmit={this.submitForm}
-          action={process.env.REACT_APP_NOT_SECRET_CODE}
-          method="POST"
-        >
-          <div className="formHeader">
-            <div className="labels">
-              <label>Name:</label>
-              <input type="text" name="name" style={{ width: '300px' }} />
+      <div className="formbody">
+        <h4>Contact Me</h4>
+        <div className="formwrapper">
+          <form
+            className="form"
+            onSubmit={this.submitForm}
+            action={process.env.REACT_APP_NOT_SECRET_CODE}
+            method="POST"
+          >
+            <div>
+              <div>
+                <div className="labels">
+                  <label>Name:</label>
+                  <input type="text" name="name" />
+                </div>
+                <div className="labels">
+                  <label>Email:</label>
+                  <input type="email" name="email" />
+                </div>
+              </div>
+              <div className="labels">
+                <label>Message:</label>
+                <textarea type="text" name="message" id="msgBox"/>
+              </div>
+              <div>
+                {status === 'SUCCESS' ? (
+                  <p>Thanks!</p>
+                ) : (
+                  <button className="submitButton">Submit</button>
+                )}
+                {status === 'ERROR' && <p>Ooops! There was an error.</p>}
+              </div>
             </div>
-            <div className="labels" id="email">
-              <label>Email:</label>
-              <input type="email" name="email" style={{ width: '300px' }} />
-            </div>
-          </div>
-          <div className="labels">
-            <label>Message:</label>
-            <textarea
-              type="text"
-              name="message"
-              style={{ width: '100%', height: '450px' }}
-            />
-          </div>
-          {status === 'SUCCESS' ? <p>Thanks!</p> : <button>Submit</button>}
-          {status === 'ERROR' && <p>Ooops! There was an error.</p>}
-        </form>
+          </form>
+        </div>
       </div>
     )
   }
