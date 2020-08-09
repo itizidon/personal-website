@@ -3,9 +3,6 @@ import React from 'react'
 export default function About() {
   return (
     <div className="comps" id="about">
-      <p height='100%' width="200px">
-        <img height="70%"  src="https://i.ibb.co/yP140RP/IMG-4328.jpg" alt="me"></img>
-      </p>
       <p id="aboutme">
         I worked at MUJI as a logistics coordinator for a few months where I
         used Excel to track shipments. I realized I enjoyed the logical thinking

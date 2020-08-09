@@ -11,14 +11,19 @@ export default function App() {
   return (
     <div className="mainbody">
       <div className="navBar">
-        <div className="navContents">
-          <ul onClick={() => setSelected('home')}>Home</ul>
-          <ul onClick={() => setSelected('about')}>About</ul>
-          <ul onClick={() => setSelected('projects')}>Projects</ul>
-          <ul onClick={() => setSelected('contact')}>Contact</ul>
-          <ul id="viewResume">
-            <a classname="viewResume" href={Don_Ng_Resume}>Resume</a>
-          </ul>
+        <div className="navWrapper">
+          <div className="navContents">
+            <h1 className="logo">Portfolio</h1>
+            <ul onClick={() => setSelected('home')}>Home</ul>
+            <ul onClick={() => setSelected('about')}>About</ul>
+            <ul onClick={() => setSelected('projects')}>Projects</ul>
+            <ul onClick={() => setSelected('contact')}>Contact</ul>
+            <ul id="viewResume">
+              <a classname="viewResume" href={Don_Ng_Resume}>
+                Resume
+              </a>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="allComps">
