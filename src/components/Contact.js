@@ -13,7 +13,7 @@ export default class MyForm extends React.Component {
     const { status } = this.state
     return (
       <div className="formbody">
-        <h4>Contact Me</h4>
+        <h4 className="Contactme">Contact Me</h4>
         <div className="formwrapper">
           <form
             className="form"
@@ -23,7 +23,7 @@ export default class MyForm extends React.Component {
           >
             <div>
               <div>
-                <div className="labels">
+                <div className="labels" id="namelabel">
                   <label>Name:</label>
                   <input type="text" name="name" />
                 </div>

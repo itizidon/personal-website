@@ -3,6 +3,7 @@ import About from './About'
 import Projects from './Projects'
 import Contact from './Contact'
 import Welcome from './Welcome'
+import Education from './Education'
 
 export default function AllComponents(props) {
   useEffect(() => {
@@ -11,6 +12,7 @@ export default function AllComponents(props) {
   return (
     <div>
       <Welcome></Welcome>
+      <Education></Education>
       <About></About>
       <Projects></Projects>
       <Contact></Contact>

@@ -39,7 +39,6 @@
 
 .comps {
   width: 100vw;
-  height: 500px;
 }
 
 .navBar {
@@ -174,6 +173,7 @@
   padding: 10px;
   font-size: 20px;
   text-align: center;
+  border-top: 5px solid lightcoral;
 }
 
 .contents {
@@ -221,6 +221,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  padding-top: 100px;
 }
 
 .contents h6 {
@@ -401,6 +402,99 @@
 }
 
 .projectsLink{
+  width: 900px;
   color:white;
-  padding-bottom: 50px
+  outline-style: solid;
+  text-align: center;
+}
+
+.educationwrapper{
+  display: flex;
+  justify-content: center;
+  background-color: lightcoral;
+  height: 600px;
+}
+
+.education{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+.educationwrapperwrapper{
+  width: 900px;
+}
+
+.educationwrapperwrapper h1{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.titles{
+  width: 300px;
+}
+
+.institution{
+  background:rgba(16, 16, 16, 0.1);
+  border-radius: 16px;
+  color: white;
+  font-size: 20px;
+}
+
+.institution:hover{
+  transform: scale(1.2);
+}
+
+.institution h6 {
+  font-size: 25px;
+}
+
+.bingWrapper{
+  padding-top: 50px;
+  height: 41px;
+  width: 300px;
+
+}
+
+.bingImage{
+  height: 100%;
+  width: 100%;
+}
+
+.fullstackwrapperwrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.fullstackwrapper{
+
+  height: 150px;
+  width: 151px;
+}
+
+.fullstackicon{
+  height: 100%;
+  width: 100%;
+}
+
+.fullstackheader{
+  margin-top:0px;
+}
+
+.educationtitle{
+  outline-style: solid;
+}
+
+.Contactme{
+  font-size: 30px;
+
+}
+
+#namelabel{
+  border-top: 5px solid lightcoral;
+  padding-top: 20px;
 }

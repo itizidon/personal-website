@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './App.css'
 import AllComponents from './components/AllComponents'
 import Don_Ng_Resume from './assets/Don_Ng_Resume.pdf'
-let sidebar = ['home', 'about', 'projects', 'contact']
+let sidebar = ['home', 'education', 'about', 'projects', 'contact']
 
-let ycoord = [0, 650, 1550, 3300]
+let ycoord = [0, 650, 1300, 2100, 4000]
 
 export default function App() {
   const [selected, setSelected] = useState('welcome')
@@ -15,6 +15,7 @@ export default function App() {
           <div className="navContents">
             <h1 className="logo">Portfolio</h1>
             <ul onClick={() => setSelected('home')}>Home</ul>
+            <ul onClick={() => setSelected('education')}>Education</ul>
             <ul onClick={() => setSelected('about')}>About</ul>
             <ul onClick={() => setSelected('projects')}>Projects</ul>
             <ul onClick={() => setSelected('contact')}>Contact</ul>
