@@ -108,6 +108,8 @@
 }
 
 .me {
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
@@ -279,21 +281,25 @@
 }
 
 .icons {
+  width: 500px;
+  transition: all 0.5s;
   padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .linkedIn {
-  padding-right: 40px;
 }
 
 .resume {
-  padding-left: 40px;
 }
 
 #viewResume a {
   color: white;
 }
 
+.github{
+}
 #viewResume a:hover {
   color: black;
 }
@@ -304,9 +310,34 @@
   flex-direction: column;
 }
 
+.meWrapperWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+}
+
 .doubleWrap {
   display: flex;
   justify-content: center;
   width: 800px;
+  height: 600px;
   background: rgba(16, 16, 16, 0.8);
+  border-radius: 16px;
+}
+
+.icons a img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.emailicon{
+}
+
+.emailicon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }

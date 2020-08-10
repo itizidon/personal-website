@@ -4,6 +4,7 @@ import Github from '../assets/Github.png'
 import Don_Ng_Resume from '../assets/Don_Ng_Resume.pdf'
 import Resume from '../assets/Resume.png'
 import Me from '../assets/Me.png'
+import email from '../assets/email.png'
 
 export default function Welcome() {
   return (
@@ -13,8 +14,13 @@ export default function Welcome() {
           <div>
             <h1 className="name">Don Ng</h1>
           </div>
+          <div className="meWrapperWrapper">
           <div className="meWrapper">
             <img className="me" src={Me} alt="me"></img>
+          </div>
+          </div>
+          <div className="list">
+            <p>Software Engineer</p>
           </div>
           <div className="icons">
             <a href="https://www.linkedin.com/in/don-ng1/" className="linkedIn">
@@ -25,7 +31,7 @@ export default function Welcome() {
                 alt="linkedinlogo"
               ></img>
             </a>
-            <a href="https://github.com/itizidon">
+            <a className="github" href="https://github.com/itizidon">
               <img
                 src={Github}
                 height="60px"
@@ -36,6 +42,7 @@ export default function Welcome() {
             <a className="resume" href={Don_Ng_Resume} download>
               <img src={Resume} height="60px" width="60px" alt="resume"></img>
             </a>
+            <img className="emailicon" src={email} alt="email"></img>
           </div>
         </div>
       </div>

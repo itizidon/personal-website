@@ -3,6 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <div className="comps" id="about">
+      <h2>About Me</h2>
       <p id="aboutme">
         I worked at MUJI as a logistics coordinator for a few months where I
         used Excel to track shipments. I realized I enjoyed the logical thinking
