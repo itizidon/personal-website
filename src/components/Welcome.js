@@ -42,7 +42,10 @@ export default function Welcome() {
             <a className="resume" href={Don_Ng_Resume} download>
               <img src={Resume} height="60px" width="60px" alt="resume"></img>
             </a>
-            <img className="emailicon" src={email} alt="email"></img>
+            <img className="emailicon" src={email} alt="email" onClick={()=>{
+              navigator.clipboard.writeText('dng21@binghamton.edu')
+              alert('dng21@binghamton.edu has been copied')
+            }}></img>
           </div>
         </div>
       </div>

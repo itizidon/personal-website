@@ -4,7 +4,7 @@ import AllComponents from './components/AllComponents'
 import Don_Ng_Resume from './assets/Don_Ng_Resume.pdf'
 let sidebar = ['home', 'about', 'projects', 'contact']
 
-let ycoord = [0, 720, 1500, 3300]
+let ycoord = [0, 650, 1550, 3300]
 
 export default function App() {
   const [selected, setSelected] = useState('welcome')

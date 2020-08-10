@@ -45,10 +45,10 @@
 .navBar {
   overflow: hidden;
   height: 75px;
-  background-color: #333;
+  background-color: rgba(16, 16, 16, 0.8);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  width: 100vw; /* Full width */
 }
 
 .navContents ul {
@@ -80,9 +80,11 @@
   justify-content: center;
 }
 
-.name{
+.name {
   display: flex;
   justify-content: center;
+  font-size: 45px;
+  outline-style: double;
 }
 
 #HomePage {
@@ -136,6 +138,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding-top: 100px;
 }
 
 #about p {
@@ -143,17 +146,46 @@
   justify-content: center;
 }
 
+.aboutwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectsTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutwrapper h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.projectsWrapper {
+  background: lightcoral;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
 #aboutme {
-  width: 500px;
+  width: 700px;
   padding: 10px;
   font-size: 20px;
-  align-items: center;
+  text-align: center;
 }
 
 .contents {
   display: flex;
   flex-direction: column;
   width: 450px;
+  background: rgba(16, 16, 16, 0.1);
+  border-radius: 16px;
+  color: white;
+}
+.contents:hover{
+  transform: scale(1.2);
 }
 
 .logo {
@@ -173,9 +205,21 @@
   justify-content: center;
 }
 
-#projects {
+.smallprojects {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.description h5 {
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+}
+
+#projects {
+  width: 2000px;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 
@@ -186,7 +230,7 @@
 .video {
   display: flex;
   justify-content: center;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .inVideo {
@@ -221,10 +265,11 @@
 .description {
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .projectsPadding {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .description {
@@ -240,11 +285,6 @@
 .descriptionNoTitle {
   display: flex;
   justify-content: center;
-}
-
-#stackadonId {
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .formbody {
@@ -288,18 +328,10 @@
   justify-content: space-evenly;
 }
 
-.linkedIn {
-}
-
-.resume {
-}
-
 #viewResume a {
   color: white;
 }
 
-.github{
-}
 #viewResume a:hover {
   color: black;
 }
@@ -310,12 +342,12 @@
   flex-direction: column;
 }
 
-.meWrapperWrapper{
+.meWrapperWrapper {
   display: flex;
   justify-content: center;
 }
 
-.list{
+.list {
   display: flex;
   justify-content: center;
 }
@@ -329,15 +361,46 @@
   border-radius: 16px;
 }
 
-.icons a img:hover{
+.icons a img:hover {
   cursor: pointer;
   transform: scale(1.2);
-}
-
-.emailicon{
 }
 
 .emailicon:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.stack {
+  width: 300px;
+  text-align: center;
+  color: white;
+}
+
+.stackwrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  color: white;
+}
+
+.videowrapper {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  padding-top: 25px;
+  background: rgba(16, 16, 16, 0.1);
+  border-radius: 16px;
+  padding-bottom: 50px;
+}
+
+.videowrapper:hover{
+  transform: scale(1.2);
+}
+
+.projectsLink{
+  color:white;
+  padding-bottom: 50px
 }
