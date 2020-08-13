@@ -184,7 +184,7 @@
   border-radius: 16px;
   color: white;
 }
-.contents:hover{
+.contents:hover {
   transform: scale(1.2);
 }
 
@@ -397,25 +397,25 @@
   padding-bottom: 50px;
 }
 
-.videowrapper:hover{
+.videowrapper:hover {
   transform: scale(1.2);
 }
 
-.projectsLink{
+.projectsLink {
   width: 900px;
-  color:white;
+  color: white;
   outline-style: solid;
   text-align: center;
 }
 
-.educationwrapper{
+.educationwrapper {
   display: flex;
   justify-content: center;
   background-color: lightcoral;
   height: 600px;
 }
 
-.education{
+.education {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -423,28 +423,28 @@
   padding-top: 50px;
 }
 
-.educationwrapperwrapper{
+.educationwrapperwrapper {
   width: 900px;
 }
 
-.educationwrapperwrapper h1{
+.educationwrapperwrapper h1 {
   display: flex;
   justify-content: center;
   color: white;
 }
 
-.titles{
+.titles {
   width: 300px;
 }
 
-.institution{
-  background:rgba(16, 16, 16, 0.1);
+.institution {
+  background: rgba(16, 16, 16, 0.1);
   border-radius: 16px;
   color: white;
   font-size: 20px;
 }
 
-.institution:hover{
+.institution:hover {
   transform: scale(1.2);
 }
 
@@ -452,49 +452,77 @@
   font-size: 25px;
 }
 
-.bingWrapper{
+.bingWrapper {
   padding-top: 50px;
   height: 41px;
   width: 300px;
-
 }
 
-.bingImage{
+.bingImage {
   height: 100%;
   width: 100%;
 }
 
-.fullstackwrapperwrapper{
+.fullstackwrapperwrapper {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.fullstackwrapper{
-
+.fullstackwrapper {
   height: 150px;
   width: 151px;
 }
 
-.fullstackicon{
+.fullstackicon {
   height: 100%;
   width: 100%;
 }
 
-.fullstackheader{
-  margin-top:0px;
+.fullstackheader {
+  margin-top: 0px;
 }
 
-.educationtitle{
+.educationtitle {
   outline-style: solid;
 }
 
-.Contactme{
+.Contactme {
   font-size: 30px;
-
 }
 
-#namelabel{
+#namelabel {
   border-top: 5px solid lightcoral;
   padding-top: 20px;
+}
+
+.frontendwrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.backendwrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.frontend {
+  display: flex;
+  flex-direction: column;
+}
+
+.frontend h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.frontendlist {
+  width: 400px;
+  height: 300px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.frontendlist span {
+
 }

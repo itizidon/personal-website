@@ -5,6 +5,7 @@ import Don_Ng_Resume from '../assets/Don_Ng_Resume.pdf'
 import Resume from '../assets/Resume.png'
 import Me from '../assets/Me.png'
 import email from '../assets/email.png'
+import writing from '../assets/writing.png'
 
 export default function Welcome() {
   return (
@@ -42,6 +43,7 @@ export default function Welcome() {
             <a className="resume" href={Don_Ng_Resume} download>
               <img src={Resume} height="60px" width="60px" alt="resume"></img>
             </a>
+            <a className="medium" href="https://medium.com/@donfullstack/how-to-setup-a-graphql-express-and-postgresql-server-7ab2c0f6ddbd"><img height="60px" width="60px"src={writing}></img></a>
             <img className="emailicon" src={email} alt="email" onClick={()=>{
               navigator.clipboard.writeText('dng21@binghamton.edu')
               alert('dng21@binghamton.edu has been copied')

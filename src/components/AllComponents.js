@@ -4,6 +4,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import Welcome from './Welcome'
 import Education from './Education'
+import Skills from './Skills'
 
 export default function AllComponents(props) {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function AllComponents(props) {
       <Education></Education>
       <About></About>
       <Projects></Projects>
+      <Skills></Skills>
       <Contact></Contact>
     </div>
   )
