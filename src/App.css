@@ -524,5 +524,17 @@
 }
 
 .frontendlist span {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.backend{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.backend h1 {
+  display: flex;
+  justify-content: center;
 }

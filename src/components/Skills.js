@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Skills() {
   return (
@@ -21,17 +21,22 @@ export default function Skills() {
         </div>
       </div>
       <div className="backendwrapper">
-        <h1>Backend</h1>
-        <div>
-          <span>expressjs</span>
-          <span>socket.io</span>
-          <span>postgreSQL</span>
-          <span>mocha</span>
-          <span>sequelize</span>
-          <span>graphql</span>
+        <div className="backend">
+          <h1>Backend</h1>
+          <div className="frontendlist">
+            <span>expressjs</span>
+            <span>socket.io</span>
+            <span>postgreSQL</span>
+            <span>mocha</span>
+            <span>sequelize</span>
+            <span>graphql</span>
+            <span>go</span>
+            <span>prisma</span>
+            <span>mongodb</span>
+          </div>
         </div>
       </div>
       <div></div>
     </div>
-  )
+  );
 }

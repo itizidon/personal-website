@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './App.css'
 import AllComponents from './components/AllComponents'
-import Don_Ng_Resume from './assets/Don_Ng_Resume.pdf'
+import Don_Ng_Resume from './assets/Don Ng Resume.pdf'
 let sidebar = ['home', 'education', 'about', 'projects', 'contact']
 
-let ycoord = [0, 650, 1300, 2100, 4000]
+let ycoord = [0, 650, 1300, 2100, 6000]
 
 export default function App() {
   const [selected, setSelected] = useState('welcome')
